@@ -1,0 +1,15 @@
+Index: main.pyw
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- main.pyw	(revision )
++++ main.pyw	(revision )
+@@ -199,7 +199,6 @@
+ 		# self.opened_from = self.path.split('\'')[1]
+ 		self.opened_from = re.findall('(?<=name.)(.*)(?=\smode)',self.path,re.I)[0]
+ 
+-
+ 		self.f_3_filter()
+ 		self.front_total_label_var.set('Elemente totale gasite : {}'.format(str(len(self.main_string))))
+ 		self.front_path_label_var.set(" Fisier curent : {}".format(self.opened_from))
